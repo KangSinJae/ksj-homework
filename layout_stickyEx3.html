@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>layoutStickyEx3</title>
+  <style>
+    body{
+      font-size: 20px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .box1{
+      list-style: none;
+      padding: 0;
+      margin: 30px auto;
+      width: 940px;
+      
+    }
+    .box1 li{
+      float: left;
+      
+    }
+    .box1 li a{
+      color: white;
+      background-color: rgb(110, 117, 246);
+      font-weight: bold;
+      display: block;
+      width: 188px;
+      height: 50px; line-height: 50px;
+      margin: 30px auto;
+    }
+    h2{
+      clear: both;
+      background-color: gold;
+      width: 940px; height: 60px;
+      line-height: 60px;
+      margin: 30px auto;
+    }
+    .box2{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin: 30px auto;
+      width: 940px;
+    }
+    .box2 li{
+      float: left;
+      font-weight: bold;
+      background-color: red;
+      display: inline-block;
+      height: 50px; line-height: 50px;
+      width: 300px;
+      margin-bottom: 30px;
+      margin-right: 20px;
+      text-align: center;
+    }
+    .box2 li:nth-child(3){
+      margin: 0;
+    }
+
+    .box3{
+      clear: both;
+      background-color: darkcyan;
+      width: 940px; height: 40px;
+      line-height: 40px;
+      margin: 30px auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>로고</h1>
+  <menu class="box1">
+    <li><a href="#">홈</a></li>
+    <li><a href="#">상품</a></li>
+    <li><a href="#">소개</a></li>
+    <li><a href="#">서비스</a></li>
+    <li><a href="#">연락처</a></li>
+  </menu>
+  <h2>컨텐츠</h2>
+  <div>
+    <ul class="box2">
+      <li>1번째 열</li>
+      <li>2번째 열</li>
+      <li>3번째 열</li>
+    </ul>
+  </div>
+  <div class="box3">
+    <p>@copyright 2022</p>
+  </div>
+</body>
+</html>
