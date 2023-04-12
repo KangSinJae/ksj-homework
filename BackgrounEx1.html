@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackGroundEx</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        form{
+            width: 400px;
+            border: 2px solid black;
+            border-radius: 20px;
+            margin: 100px auto;
+            padding: 50px;
+        }
+        p{
+            text-align: center;
+            margin: 15px auto;
+        }
+        p input{
+            background-color: rgb(255, 231, 235);
+            padding: 20px 40px;
+            width: 300px;
+            border-radius: 30px;
+            font-size: 20px;
+            background-size: 30px;
+            background-repeat: no-repeat;
+            background-position: 2% 50%;
+        }
+        p input:focus{
+            background-color: darksalmon;
+        }
+        .name{
+            background-image: url(./images/name.png);
+        }
+        .Email{
+            background-image: url(./images/email.png);
+        }
+        .Number{
+            background-image: url(./images/number.png);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p><input type="text" id="name" class="name" placeholder="이름을 입력하세요"></p>
+        <p><input type="text" id="Email" class="Email" placeholder="이메일을 입력하세요"></p>
+        <p><input type="text" id="Number" class="Number" placeholder="연락처를 입력하세요"></p>
+    </form>
+</body>
+</html>
