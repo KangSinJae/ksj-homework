@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>transEx4</title>
+    <style>
+        .container{
+            background-color: crimson;
+            width: 300px; height: 400px;
+            
+            transition: 0.5s;
+            overflow: hidden;
+        }
+
+        .block{
+            background-color: aqua;
+            width: 400px; height: 100px;
+        }
+        
+        input[type=checkbox]:checked ~.container{
+            height: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>trans 연습 4</h1>
+    <input type="checkbox" name="check" id="check">
+    <label for="check">체크 박스가 체크되면 박스가 위로 올라와 사라집니다.</label>
+    <div class="container">
+        <h2>checked</h2>
+        <p>청춘을 피가 그들은 그림자는 있는 풀밭에 방지하는 쓸쓸하랴? 군영과 하여도 사람은 운다.</p>
+    </div>
+    <div class="block">block</div>
+</body>
+</html>
