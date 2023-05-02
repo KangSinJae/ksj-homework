@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>flexWeb1</title>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+      background-color: #fafaf0;
+      color: #85857f;
+    }
+    header{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    header .head-box{
+      margin: 0;
+      height: 40vh;
+      display: flex;
+      flex-direction: column;
+      padding: 50px 200px;
+    }
+    h1{
+      font-weight: bold;
+      font-size: 3rem;
+    }
+    button{
+    margin-top: 20px;
+    padding: 0;
+    background-color: white;
+    border: 3px solid #c8c8c0;
+    border-radius: 50px;
+    width: 200px; height: 50px;
+    }
+    .box2 button{
+      margin-top: 5px;
+    }
+    .box1{
+      margin: 0;
+      background-color: #f5f4e4;
+      padding: 50px;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      
+    }
+     .img1{
+      margin-left: auto;
+      width: 50%;
+      height: 600px;
+      
+    }
+    .container{
+      display: flex;
+      justify-content: center;
+      height: 20vw;
+      padding: 20px;
+    }
+    .txt-box1{
+      width: 400px;
+    }
+    .txt-box2, .txt-box3{
+      width: 400px;
+      height: 100px;
+    }
+    .box4{
+      margin: 20px 0;
+      background-color: #f5f4e4;
+      padding: 50px;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+    .txt-box4{
+      margin-left: auto;
+      width: 400px;
+    }
+    .img2{
+      width: 50%;
+      height: 600px;
+    }
+    footer{
+      margin: 20px 0;
+
+      padding: 50px;
+      height: 500px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+    }
+    .txt-box5{
+      width: 800px;
+      margin: 0 auto;
+
+    }
+    svg{
+      width: 20px; height: 20px;
+      border: 1px solid #c8c8c0;
+      border-radius: 50%;
+      padding: 10px;
+      margin: 0 5px;
+      flex: auto;
+    }
+    input[type="email"]{
+      border-radius: 20px;
+      height: 50px; width: 500px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="head-box">
+      <p><em><strong>Nisi</strong></em> Pellentesque</p>
+      <h1>Morbi tincidunt</h1>
+      <p>Pellentesque quam tortor, aliquam vel bibendum id, cursus et leo. Duis vehicula in risus at aliquam. Cras eget consequat elit. Proin porta justo sit amet elit iaculis, eget dignissim nisi pharetra. Vivamus suscipit eget ligula nec vestibulum. Proin eget nisi nunc. Praesent vitae tempor felis.</p>
+      <button>SAGITTIS</button>
+    </div>
+  </header>
+
+  <main class="box1">
+    <div class="txt-box1">
+    <p><em><strong>Nisi</strong></em> Pellentesque</p>
+    <h1>Morbi tincidunt</h1>
+    <p>Pellentesque quam tortor, aliquam vel bibendum id, cursus et leo. Duis vehicula in risus at aliquam. Cras eget consequat elit. Proin porta justo sit amet elit iaculis, eget dignissim nisi pharetra. Vivamus suscipit eget ligula nec vestibulum. Proin eget nisi nunc. Praesent vitae tempor felis.</p>
+    <button>LECTUS</button>
+    </div>
+    <div class="img"></div><img src="./images/img1.jpg" alt="img1" class="img1"></div>
+  </main>
+  <div class="container">
+  <main class="box2">
+    <div class="txt-box2">
+    <p><em><strong>Nisi</strong></em> Pellentesque</p>
+    <h1>Ullamcorper</h1>
+    <p>Pellentesque quam tortor, aliquam vel bibendum id, cursus et leo. Duis vehicula in risus at aliquam. Cras eget consequat elit. Proin porta justo sit amet elit iaculis, eget dignissim nisi pharetra. Vivamus suscipit eget ligula nec vestibulum. Proin eget nisi nunc.</p>
+    <button>MAGNA</button>
+    </div>
+  </main>
+  <main class="box3">
+    <div class="txt-box3">
+    <p><em><strong>Magna</strong></em> Aenean</p>
+    <h1>Faucibus</h1>
+    <p>Nam sagittis nulla sit amet nisl blandit, a volutpat mi dapibus. Proin eu nulla condimentum, dictum ex eget, ultrices quam. Vestibulum lacinia imperdiet rutrum. In varius turpis et neque fringilla ullamcorper.</p>
+    <button>TELLUS</button>
+    </div>
+  </main>
+  </div>
+  <main class="box4">
+    <div class="txt-box4">
+    <p><em><strong>Odio</strong></em> Veroeros</p>
+    <h1>Quam nulla</h1>
+    <p>Sed vestibulum imperdiet diam. Pellentesque bibendum est id elementum malesuada. Nam suscipit tincidunt mauris sed euismod. Nunc elit tellus, fringilla et orci id, euismod molestie nisi. Fusce scelerisque vitae sem a egestas.</p>
+    <button>EUISMOD</button>
+    </div>
+    <img src="./images/img2.jpg" alt="img2" class="img2">
+  </main>
+
+  <footer>
+    <div class="txt-box5">
+    <p><em><strong>Vitae</strong></em> Aliquam</p>
+    <h1>Auctor orci</h1>
+    <p>Nulla volutpat, quam et interdum mollis, augue nunc facilisis mauris, et molestie mi odio quis urna. Nulla ut urna vestibulum, vestibulum magna vel, ullamcorper nisi.</p>
+    <input type="email" placeholder="Email" class="Email">
+    <button>SUBSCRIBE</button>
+    </div>
+    <div class="icon">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z" stroke-width="0" fill="currentColor" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M18 2a1 1 0 0 1 .993 .883l.007 .117v4a1 1 0 0 1 -.883 .993l-.117 .007h-3v1h3a1 1 0 0 1 .991 1.131l-.02 .112l-1 4a1 1 0 0 1 -.858 .75l-.113 .007h-2v6a1 1 0 0 1 -.883 .993l-.117 .007h-4a1 1 0 0 1 -.993 -.883l-.007 -.117v-6h-2a1 1 0 0 1 -.993 -.883l-.007 -.117v-4a1 1 0 0 1 .883 -.993l.117 -.007h2v-1a6 6 0 0 1 5.775 -5.996l.225 -.004h3z" stroke-width="0" fill="currentColor"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+        <path d="M16.5 7.5l0 .01"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail-forward" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M12 18h-7a2 2 0 0 1 -2 -2v-10a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v7.5"></path>
+        <path d="M3 6l9 6l9 -6"></path>
+        <path d="M15 18h6"></path>
+        <path d="M18 15l3 3l-3 3"></path>
+      </svg>
+    </div>
+  </footer>
+</body>
+</html>
