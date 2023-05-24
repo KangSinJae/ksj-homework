@@ -1,0 +1,438 @@
+@charset "utf-8";
+
+/* Fonts */
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Noto+Sans+KR:wght@300;400;700&display=swap');
+
+html,
+body {
+  width: 100%;
+}
+/* 헤드 네비게이션 */
+.head-nav {
+  background-color: white;
+  width: 100%;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 1;
+}
+.logo {
+  width: 70px;
+  margin-left: 20px;
+}
+.menu {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+/* header */
+header {
+  background-color: #fadcdc;
+  width: 100%;
+  height: 820px;
+  text-align: center;
+  position: relative;
+}
+header p {
+  font-size: 20px;
+  color: #686868;
+  padding: 50px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+header h1 {
+  font-size: 50px;
+  font-weight: lighter;
+  font-family: "Montserrat", sans-serif;
+}
+header img {
+  width: 400px;
+  height: 400px;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+}
+header ul li {
+  margin: 0 5px;
+  font-weight: 400;
+  font-family: "Noto Sans KR", sans-serif;
+}
+header .play{
+  background-color: #333333;
+  width: 50px; height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 45%; top: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .play .triangle{
+    transform: rotate(90deg);
+    width: 0px;
+    height: 0px;
+    border-bottom: calc( 10px * 1.732 ) solid #ffffff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+  }
+
+/* 본문글 */
+.box {
+  width: 100%;
+  height: 1280px;
+}
+.box .item {
+  box-sizing: border-box;
+  margin: 20px auto;
+  width: 80%;
+  height: 320px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.item h1 {
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.item p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  line-height: 40px;
+  font-size: 16px;
+}
+
+/* hover img */
+.hover-img li {
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 5px 0;
+}
+.hover-img li .txt-box {
+  position: absolute;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  height: 100%;
+  bottom: 110%;
+  transition: 0.5s;
+  z-index: 2;
+  line-height: 140px;
+}
+.txt-box h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+.hover-img li:nth-child(n + 1):nth-child(-n + 3) .txt-box {
+  line-height: 280px;
+}
+.hover-img li:nth-child(n + 6):nth-child(-n + 7) .txt-box {
+  line-height: 280px;
+}
+.hover-img li:hover .txt-box {
+  transform: translateY(110%);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.hover-img li img {
+  height: 140px;
+  width: 100%;
+}
+.hover-img li:nth-child(n + 1):nth-child(-n + 3) img {
+  height: 280px;
+}
+.hover-img li:nth-child(n + 6):nth-child(-n + 7) img {
+  height: 280px;
+}
+
+/* 중간 소제목 */
+.mid-txt {
+  margin: 10px auto;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+}
+.mid-txt h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 33px;
+}
+.mid-txt .line {
+  border: 1px solid black;
+  width: 15%;
+  margin: 20px auto;
+}
+.mid-txt p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* img + txt */
+.txt-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.txt-img img {
+  width: 300px;
+  height: 320px;
+  margin: 0 auto;
+}
+.txt-img strong {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 20px 0;
+}
+.txt-img p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Youtube Box */
+.youtube-box {
+  background-color: #f9fafb;
+  width: 100%;
+  height: 610px;
+  text-align: center;
+}
+.youtube-box h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  width: 300px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+.youtube-box p {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  width: 300px;
+  margin: 20px auto;
+}
+.youtube-box iframe {
+  width: 300px;
+  height: 160px;
+  margin-top: 30px;
+}
+
+/* 중간 소제목2 */
+.service {
+  margin: 40px auto;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+}
+.service h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 33px;
+}
+.service .line {
+  border: 1px solid black;
+  width: 15%;
+  margin: 20px auto;
+}
+
+/* img-box */
+.img-box {
+  display: flex;
+  flex-direction: column;
+}
+.img-box img {
+  width: 300px;
+  height: 320px;
+  margin: 0 auto;
+}
+.img-box .txt-box2 span {
+  display: block;
+  margin: 20px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+}
+.img-box .txt-box2 p {
+  display: block;
+  margin: 10px 0;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.img-box .txt-box2 {
+  width: 300px;
+  height: 165px;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: 0px 14px 22px 4px rgba(0, 0, 0, 0.24);
+  -webkit-box-shadow: 0px 14px 22px 4px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 14px 22px 4px rgba(0, 0, 0, 0.24);
+}
+
+/* logo box */
+.logo-box {
+  width: 100%;
+  height: 600px;
+  margin-top: 90px;
+  background-color: #f8f9fa;
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  justify-content: space-evenly;
+  align-content: space-evenly
+}
+.logo-box img {
+  width: 120px;
+  height: 90px;
+}
+
+/* Location */
+.location-box{
+  margin-top: 30px;
+  width: 100%;
+}
+.location-box h1{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+.location-box h4{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 20px 0;
+  width: 150px;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid rgb(179, 179, 179);
+}
+.location-nav h4:first-child{
+  border-bottom: 5px solid black;
+}
+.location-nav{
+  display: flex;
+  justify-content: center
+}
+.location-box .map{
+  width: 300px;
+  margin: auto !important;
+}
+.location-box .adress{
+  width: 300px;
+  margin: 20px auto;
+}
+.location-box .adress li{
+  border-bottom: 1px solid rgb(165, 165, 165);
+  padding: 20px 0;
+}
+.location-box .adress li strong{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+.location-box .adress li strong{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+}
+.location-box .adress li:last-child{
+  border-bottom: 1px solid black;
+}
+
+/* Talk */
+.talk{
+  margin-top: 50px;
+  width: 100%; height: 300px;
+  background-image: url(./images/img-bg.jpg);
+  background-color: #8bbace;
+  background-blend-mode: multiply;
+  color: white; 
+  text-align: center;
+}
+.talk h1{
+  display: block;
+  margin: 10px 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+}
+.talk h4{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin: 30px 0;
+
+  display: block;
+}
+.talk span{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  display: block;
+  margin: 40px auto;
+  width: 200px; height: 50px;
+}
+.talk span:hover{
+  background-color: #fff;
+  color: #000;
+}
+
+/* footer */
+footer{
+  margin-left: 20px;
+  margin-bottom: 80px;
+}
+footer img{
+  display: block;
+  margin: 40px 0;
+}
+footer span{
+  display: block;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 20px 0;
+}
+footer p{
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+/* copy */
+.copy{
+  margin: 0;
+  background-color: #f2f2f2;
+  width: 100%; padding: 30px 0;
+  text-align: center;
+}
+
+.mov-btn{
+  background-color: #a9a9a9;
+  width: 40px; height: 40px;
+  position: fixed;
+  bottom: 2%; right: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.mov-btn img{
+  width: 30px; height: 30px;
+  transform: rotate(180deg);
+}
